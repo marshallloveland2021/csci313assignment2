@@ -9,11 +9,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
   </head>
   <body>
     <header>
-      <h1>Marshall Loveland Page</h1>
+      <h1 class="text-center my-3">Marshall Loveland Page</h1>
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
           <ul class="navbar-nav">
@@ -21,7 +24,7 @@
               <a class="nav-link" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Me</a>
+              <a class="nav-link active" href="about.html">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="projects.html">Projects</a>
@@ -35,185 +38,204 @@
     </header>
 
     <main>
-      <section id="about-me">
-        <h3>About Me</h3>
-        <p>
-          I am a senior at North Dakota State University studying Software
-          Engineering. I ended up building my first computer in high school
-          which was something I loved. I eventually found my way to programming
-          in high school and started to really love it after taking the
-          introduction Java course. I switched my majot around a few times. I
-          started at Computer Engineering and eventually ended up in Software
-          Engineering. I realized I liked the programming more than the hardware
-          componet.
-        </p>
-        <h3>My Programming Languages</h3>
-        <ul class="list-group">
-          <li class="list-group-item">Java</li>
-          <li class="list-group-item">C#</li>
-          <li class="list-group-item">Python</li>
-          <li class="list-group-item">.NET</li>
-          <li class="list-group-item">PostgreSQL</li>
-          <li class="list-group-item">HTML, CSS, JavaScript</li>
-        </ul>
-      </section>
-      <section id="professional-background">
-        <h3>Work History</h3>
-        <ul>
-          <ul>
-            <h5>DigiKey</h5>
-            <li>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <section id="about-me">
+              <h3>About Me</h3>
               <p>
-                I have an internship with DigiKey this summer for a Software
-                Engineering position. I will be working with Python and
-                Snowflake database.
+                I am a senior at North Dakota State University studying Software
+                Engineering. I ended up building my first computer in high
+                school which was something I loved. I eventually found my way to
+                programming in high school and started to really love it after
+                taking the introduction Java course. I switched my major around
+                a few times, starting at Computer Engineering and eventually
+                ending up in Software Engineering. I realized I liked
+                programming more than the hardware component.
               </p>
-            </li>
-          </ul>
-          <ul>
-            <h5>Veteran's Affair Hospital</h5>
-            <li>
-              <p>
-                I worked at the Veteran's Affiar Hospital last summer for an IT
-                position. I worked on helping out fellow employees with
-                equipment issues. I would ask help out if there was someone
-                switching offices.
-              </p>
-            </li>
-          </ul>
-          <ul>
-            <h5>UPS</h5>
-            <li>
-              <p>
-                I worked at UPS in the airport. I was a jet handler and would
-                take cargo off a big jet to be distributed around the region. I
-                would as driving tug cars around to pick up the cargo on the
-                jet.
-              </p>
-            </li>
-          </ul>
-        </ul>
-      </section>
-      <section id="favorite-sites">
-        <h3>My Favorite Sites</h3>
-        <div class="list-group">
-          <a
-            href="https://www.ndsu.edu/"
-            class="list-group-item list-group-item-action"
-            >NDSU</a
-          >
-          <a
-            href="https://www.amazon.com/"
-            class="list-group-item list-group-item-action"
-            >Amazon</a
-          >
-          <a
-            href="https://www.youtube.com/"
-            class="list-group-item list-group-item-action"
-            >YouTube</a
-          >
+            </section>
+          </div>
+          <div class="col-md-6 mb-4">
+            <section>
+              <h3>My Programming Languages</h3>
+              <ul class="list-group">
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">C#</li>
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">.NET</li>
+                <li class="list-group-item">PostgreSQL</li>
+                <li class="list-group-item">HTML, CSS, JavaScript</li>
+              </ul>
+            </section>
+          </div>
         </div>
-      </section>
-      <section id="favorite-movies">
-        <h3>My Favorite Movies</h3>
-        <ul class="list-group">
-          <li class="list-group-item">The Shawshank Redemption</li>
-          <li class="list-group-item">Superbad</li>
-          <li class="list-group-item">Step Brothers</li>
-        </ul>
-      </section>
-      <section id="favorite-hobbies">
-        <h3>My Favorite Hobbies</h3>
-        <ol class="list-group list-group-numbered">
-          <li class="list-group-item">Running</li>
-          <li class="list-group-item">Lifting</li>
-          <li class="list-group-item">Hiking</li>
-          <li class="list-group-item">Watching TV Shows</li>
-          <li class="list-group-item">Golfing</li>
-        </ol>
-      </section>
 
-      <div class="container mt-3">
-        <br />
-        <h3>My Weekly Schedule</h3>
-        <table class="table table-hover">
-          <tr class="table-light">
-            <th>Day</th>
-            <th>10AM</th>
-            <th>11AM</th>
-            <th>12PM</th>
-            <th>1PM</th>
-            <th>2PM</th>
-            <th>3PM</th>
-            <th>4PM</th>
-            <th>5PM</th>
-            <th>6PM</th>
-            <th>7PM</th>
-            <th>8PM</th>
-          </tr>
-          <tr class="table-primary">
-            <th>Sunday</th>
-            <td colspan="5"></td>
-            <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
-            <td colspan="3"></td>
-          </tr>
-          <tr class="table-success">
-            <th>Monday</th>
-            <td colspan="1"></td>
-            <td>Weight Lifting</td>
-            <td colspan="2"></td>
-            <td>CSCI 371 Class: 2PM - 2:50PM</td>
-            <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
-            <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
-            <td colspan="1"></td>
-          </tr>
-          <tr class="table-danger">
-            <th>Tuesday</th>
-            <td colspan="1"></td>
-            <td colspan="2">CSCI 372 Class: 11AM - 12:15PM</td>
-            <td colspan="2"></td>
-            <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
-            <td></td>
-            <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
-            <td></td>
-          </tr>
-          <tr class="table-info">
-            <th>Wedesday</th>
-            <td colspan="4"></td>
-            <td>CSCI 371 Class: 2PM - 2:50PM</td>
-            <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
-            <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
-            <td colspan="1"></td>
-          </tr>
-          <tr class="table-warning">
-            <th>Thursday</th>
-            <td colspan="1"></td>
-            <td colspan="2">CSCI 372 Class: 11AM - 12:15PM</td>
-            <td colspan="2"></td>
-            <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
-            <td></td>
-            <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
-            <td></td>
-          </tr>
-          <tr class="table-active">
-            <th>Friday</th>
-            <td colspan="4"></td>
-            <td>CSCI 371 Class: 2PM - 2:50PM</td>
-            <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
-            <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
-            <td colspan="1"></td>
-          </tr>
-          <tr class="table-light">
-            <th>Saturday</th>
-            <td colspan="5"></td>
-            <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
-            <td colspan="3"></td>
-          </tr>
-        </table>
+        <div class="row mb-4">
+          <div class="col">
+            <section id="professional-background">
+              <h3>Work History</h3>
+              <ul class="ms-0">
+                <li class="mb-3">
+                  <h5>DigiKey</h5>
+                  <p>
+                    I have an internship with DigiKey this summer for a Software
+                    Engineering position. I will be working with Python and
+                    Snowflake database.
+                  </p>
+                </li>
+                <li class="mb-3">
+                  <h5>Veteran's Affair Hospital</h5>
+                  <p>
+                    I worked at the Veteran's Affiar Hospital last summer for an
+                    IT position. I helped employees with equipment issues and
+                    assisted with office relocations.
+                  </p>
+                </li>
+                <li>
+                  <h5>UPS</h5>
+                  <p>
+                    I worked at UPS in the airport as a jet handler, unloading
+                    cargo from jets to be distributed around the region, and
+                    driving tug cars around to pick up the cargo.
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <section id="favorite-sites">
+              <h3>My Favorite Sites</h3>
+              <div class="list-group">
+                <a
+                  href="https://www.ndsu.edu/"
+                  class="list-group-item list-group-item-action"
+                  >NDSU</a
+                >
+                <a
+                  href="https://www.amazon.com/"
+                  class="list-group-item list-group-item-action"
+                  >Amazon</a
+                >
+                <a
+                  href="https://www.youtube.com/"
+                  class="list-group-item list-group-item-action"
+                  >YouTube</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <section id="favorite-movies">
+              <h3>My Favorite Movies</h3>
+              <ul class="list-group">
+                <li class="list-group-item">The Shawshank Redemption</li>
+                <li class="list-group-item">Superbad</li>
+                <li class="list-group-item">Step Brothers</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <section id="favorite-hobbies">
+              <h3>My Favorite Hobbies</h3>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Running</li>
+                <li class="list-group-item">Lifting</li>
+                <li class="list-group-item">Hiking</li>
+                <li class="list-group-item">Watching TV Shows</li>
+                <li class="list-group-item">Golfing</li>
+              </ol>
+            </section>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h3>My Weekly Schedule</h3>
+            <table class="table table-hover">
+              <tr class="table-light">
+                <th>Day</th>
+                <th>10AM</th>
+                <th>11AM</th>
+                <th>12PM</th>
+                <th>1PM</th>
+                <th>2PM</th>
+                <th>3PM</th>
+                <th>4PM</th>
+                <th>5PM</th>
+                <th>6PM</th>
+                <th>7PM</th>
+                <th>8PM</th>
+              </tr>
+              <tr class="table-primary">
+                <th>Sunday</th>
+                <td colspan="5"></td>
+                <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
+                <td colspan="3"></td>
+              </tr>
+              <tr class="table-success">
+                <th>Monday</th>
+                <td colspan="1"></td>
+                <td>Weight Lifting</td>
+                <td colspan="2"></td>
+                <td>CSCI 371 Class: 2PM - 2:50PM</td>
+                <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
+                <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
+                <td colspan="1"></td>
+              </tr>
+              <tr class="table-danger">
+                <th>Tuesday</th>
+                <td colspan="1"></td>
+                <td colspan="2">CSCI 372: 11AM - 12:15PM</td>
+                <td colspan="2"></td>
+                <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
+                <td></td>
+                <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
+                <td></td>
+              </tr>
+              <tr class="table-info">
+                <th>Wedesday</th>
+                <td colspan="4"></td>
+                <td>CSCI 371: 2PM - 2:50PM</td>
+                <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
+                <td colspan="2">ECE 479: 6:40PM - 7:40PM</td>
+                <td colspan="1"></td>
+              </tr>
+              <tr class="table-warning">
+                <th>Thursday</th>
+                <td colspan="1"></td>
+                <td colspan="2">CSCI 372: 11AM - 12:15PM</td>
+                <td colspan="2"></td>
+                <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
+                <td></td>
+                <td colspan="2">ECE 479: 6:40PM - 7:40PM</td>
+                <td></td>
+              </tr>
+              <tr class="table-active">
+                <th>Friday</th>
+                <td colspan="4"></td>
+                <td>CSCI 371: 2PM - 2:50PM</td>
+                <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
+                <td colspan="2">ECE 479: 6:40PM - 7:40PM</td>
+                <td colspan="1"></td>
+              </tr>
+              <tr class="table-light">
+                <th>Saturday</th>
+                <td colspan="5"></td>
+                <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
+                <td colspan="3"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer>
+    <footer class="text-center">
       <br />
       <p>&copy; Marshall Loveland. All Rights Reserved.</p>
     </footer>
