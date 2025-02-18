@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,32 +14,106 @@
   <body>
     <header>
       <h1>Marshall Loveland Page</h1>
-      <nav>
-        <li>
-          <ul>
-            <a href="home.html">Home</a>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-          <ul>
-            <a href="about.html">About Me</a>
-          </ul>
-          <ul>
-            <a href="projects.html">Projects</a>
-          </ul>
-          <ul>
-            <a href="contact.html">Contact</a>
-          </ul>
-        </li>
+        </div>
       </nav>
+
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/marshall-face.jpg"
+              alt="Marshall"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/marshall-xc.jpg"
+              alt="Running"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/family.jpg"
+              alt="Family"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/hiking.jpg"
+              alt="Hiking"
+              class="d-block"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
     </header>
 
     <main>
       <section id="about-me">
-        <img
-          src="images/marshall-xc.jpg"
-          alt="When I was running cross country."
-          height="300px"
-          width="500px"
-        />
         <h3>About Me</h3>
         <p>
           I am a senior at North Dakota State University studying Software
@@ -52,116 +126,96 @@
           componet.
         </p>
         <h3>My Programming Languages</h3>
-        <li>
-          <ul>
-            Java
-          </ul>
-          <ul>
-            C#
-          </ul>
-          <ul>
-            Python
-          </ul>
-          <ul>
-            .NET
-          </ul>
-          <ul>
-            PostgreSQL
-          </ul>
-          <ul>
-            HTML, CSS, Javascript
-          </ul>
-        </li>
+        <ul class="list-group">
+          <li class="list-group-item">Java</li>
+          <li class="list-group-item">C#</li>
+          <li class="list-group-item">Python</li>
+          <li class="list-group-item">.NET</li>
+          <li class="list-group-item">PostgreSQL</li>
+          <li class="list-group-item">HTML, CSS, JavaScript</li>
+        </ul>
       </section>
       <section id="professional-background">
         <h3>Work History</h3>
-        <li>
+        <ul>
           <ul>
             <h5>DigiKey</h5>
-            <ul>
+            <li>
               <p>
                 I have an internship with DigiKey this summer for a Software
                 Engineering position. I will be working with Python and
                 Snowflake database.
               </p>
-            </ul>
+            </li>
           </ul>
           <ul>
             <h5>Veteran's Affair Hospital</h5>
-            <ul>
+            <li>
               <p>
                 I worked at the Veteran's Affiar Hospital last summer for an IT
                 position. I worked on helping out fellow employees with
                 equipment issues. I would ask help out if there was someone
                 switching offices.
               </p>
-            </ul>
+            </li>
           </ul>
           <ul>
             <h5>UPS</h5>
-            <ul>
+            <li>
               <p>
                 I worked at UPS in the airport. I was a jet handler and would
                 take cargo off a big jet to be distributed around the region. I
                 would as driving tug cars around to pick up the cargo on the
                 jet.
               </p>
-            </ul>
+            </li>
           </ul>
-        </li>
+        </ul>
       </section>
       <section id="favorite-sites">
         <h3>My Favorite Sites</h3>
-        <li>
-          <ul>
-            <a href="https://www.ndsu.edu/">NDSU</a>
-          </ul>
-          <ul>
-            <a href="https://www.amazon.com/">Amazon</a>
-          </ul>
-          <ul>
-            <a href="https://www.youtube.com/">YouTube</a>
-          </ul>
-        </li>
+        <div class="list-group">
+          <a
+            href="https://www.ndsu.edu/"
+            class="list-group-item list-group-item-action"
+            >NDSU</a
+          >
+          <a
+            href="https://www.amazon.com/"
+            class="list-group-item list-group-item-action"
+            >Amazon</a
+          >
+          <a
+            href="https://www.youtube.com/"
+            class="list-group-item list-group-item-action"
+            >YouTube</a
+          >
+        </div>
       </section>
       <section id="favorite-movies">
         <h3>My Favorite Movies</h3>
-        <li>
-          <ul>
-            The Shawshank Redemption
-          </ul>
-          <ul>
-            Superbad
-          </ul>
-          <ul>
-            Step Brothers
-          </ul>
-        </li>
+        <ul class="list-group">
+          <li class="list-group-item">The Shawshank Redemption</li>
+          <li class="list-group-item">Superbad</li>
+          <li class="list-group-item">Step Brothers</li>
+        </ul>
       </section>
       <section id="favorite-hobbies">
         <h3>My Favorite Hobbies</h3>
-        <li>
-          <ol>
-            Running
-          </ol>
-          <ol>
-            Lifting
-          </ol>
-          <ol>
-            Hiking
-          </ol>
-          <ol>
-            Watching TV Shows
-          </ol>
-          <ol>
-            Golfing
-          </ol>
-        </li>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Running</li>
+          <li class="list-group-item">Lifting</li>
+          <li class="list-group-item">Hiking</li>
+          <li class="list-group-item">Watching TV Shows</li>
+          <li class="list-group-item">Golfing</li>
+        </ol>
       </section>
-      <section id="weekly-schedule">
+
+      <div class="container mt-3">
+        <br />
         <h3>My Weekly Schedule</h3>
-        <table>
-          <tr>
+        <table class="table table-hover">
+          <tr class="table-light">
             <th>Day</th>
             <th>10AM</th>
             <th>11AM</th>
@@ -175,13 +229,13 @@
             <th>7PM</th>
             <th>8PM</th>
           </tr>
-          <tr>
+          <tr class="table-primary">
             <th>Sunday</th>
             <td colspan="5"></td>
             <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
             <td colspan="3"></td>
           </tr>
-          <tr>
+          <tr class="table-success">
             <th>Monday</th>
             <td colspan="1"></td>
             <td>Weight Lifting</td>
@@ -191,7 +245,7 @@
             <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
             <td colspan="1"></td>
           </tr>
-          <tr>
+          <tr class="table-danger">
             <th>Tuesday</th>
             <td colspan="1"></td>
             <td colspan="2">CSCI 372 Class: 11AM - 12:15PM</td>
@@ -201,7 +255,7 @@
             <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="table-info">
             <th>Wedesday</th>
             <td colspan="4"></td>
             <td>CSCI 371 Class: 2PM - 2:50PM</td>
@@ -209,7 +263,7 @@
             <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
             <td colspan="1"></td>
           </tr>
-          <tr>
+          <tr class="table-warning">
             <th>Thursday</th>
             <td colspan="1"></td>
             <td colspan="2">CSCI 372 Class: 11AM - 12:15PM</td>
@@ -219,7 +273,7 @@
             <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="table-active">
             <th>Friday</th>
             <td colspan="4"></td>
             <td>CSCI 371 Class: 2PM - 2:50PM</td>
@@ -227,17 +281,18 @@
             <td colspan="2">ECE 479 Class: 6:40PM - 7:40PM</td>
             <td colspan="1"></td>
           </tr>
-          <tr>
+          <tr class="table-light">
             <th>Saturday</th>
             <td colspan="5"></td>
             <td colspan="3">Track Practice: 3:30PM - 5:30PM</td>
             <td colspan="3"></td>
           </tr>
         </table>
-      </section>
+      </div>
     </main>
 
     <footer>
+      <br />
       <p>&copy; Marshall Loveland. All Rights Reserved.</p>
     </footer>
   </body>
